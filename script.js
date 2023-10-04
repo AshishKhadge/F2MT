@@ -165,17 +165,28 @@ function createRecipeCard(recipe) {
     image.alt = recipe.name;
 
     // Create other elements for the card (e.g., name, time, rating, type)
+    const type = document.createElement("p");
+    type.textContent = `${recipe.type}`;
+    type.classList.add("veg-nonveg");
+
     const name = document.createElement("h2");
     name.textContent = recipe.name;
 
-    const time = document.createElement("p");
-    time.textContent = `Time: ${recipe.time}`;
-
-    const type = document.createElement("p");
-    type.textContent = `Type: ${recipe.type}`;
-
     const rating = document.createElement("p");
-    rating.textContent = `Rating: ${recipe.rating}`;
+    const starIcon = document.createElement("i");
+    starIcon.classList.add("fa-solid", "fa-star");
+    starIcon.classList.add("icon-color");
+    rating.textContent = '';
+    rating.classList.add("rating");
+    rating.appendChild(starIcon);
+    rating.appendChild(document.createTextNode(`${recipe.rating}`));
+    // rating.textContent = `Rating: ${recipe.rating}`;
+
+    const time = document.createElement("p");
+    time.textContent = `${recipe.time}`;
+    time.classList.add("time");
+
+
 
     // Create a "like" button
     const likeButton = document.createElement("button");
@@ -191,10 +202,10 @@ function createRecipeCard(recipe) {
 
     // Append elements to the card
     card.appendChild(image);
-    card.appendChild(name);
-    card.appendChild(time);
     card.appendChild(type);
+    card.appendChild(name);
     card.appendChild(rating);
+    card.appendChild(time);
     card.appendChild(likeButton);
 
     // Append the card to the container

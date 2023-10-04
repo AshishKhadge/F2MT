@@ -6,6 +6,7 @@ nav{
     justify-content: space-between;
     margin: 10px;
     padding: 10px;
+    padding-inline: 60px;
     position: sticky;
     top: 0;
     background-color: white;
@@ -110,9 +111,9 @@ div>a:hover{
 
 .card {
     width: 305px;
-    height: 350px;
+    height: auto;
     margin-inline: 20px;
-    border-radius: 20px;
+    border-radius: 20px !important;
     box-shadow: 0px 3px 8px -1px rgba(50, 50, 71, 0.05);
     box-shadow: 0px 0px 1px 0px rgba(12, 26, 75, 0.24);
     margin-bottom: 50px;
@@ -186,4 +187,38 @@ td, th{
     font-size: 35px;
     margin: 12px;
     margin-left: 15px;
+}
+.veg-nonveg{
+    color: #a4a4a4;
+    font-size: 15px;
+    font-weight: 400;
+    margin-bottom: 3px;
+}
+.time{
+    color: #dc582a;
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+.icon-color{
+    color: #fdc040;
+}
+.rating{
+    text-align: right;
+    margin-right: 20px;
+    margin-bottom: 0px;
+}
+.navbar-toggler{
+    display: none ;
+}
+
+@media (max-width: 1000px) {
+    /* Styles for screens with a maximum width of 1000px */
+    .links {
+        display: none; /* Hide the links */
+    }
+
+    .navbar-toggler {
+        display: block ; /* Display the hamburger icon */
+    }
 }

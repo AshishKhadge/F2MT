@@ -30,7 +30,7 @@
             </svg>
         </div>
          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon "><i class="fa-solid fa-bars menu" style="color: #474545;"></i></span>
           </button>
         <div class="links ">
             <a href="">Home</a>
@@ -40,6 +40,18 @@
 
         </div>
     </nav>
+
+    <script>
+        $(document).ready(function() {
+            // Add a click event listener to the menu icon
+            $(".navbar-toggler").click(function() {
+                // Toggle the 'expanded' class on the navbar to show/hide the links
+                $(".navbar").toggleClass("expanded");
+            });
+        });
+    </script>
+
+
 
 
     <div class="hero-section">
