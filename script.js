@@ -298,3 +298,4 @@ function applyRatingFilter() {
     // Call filterRecipes with the rating filter
     filterRecipes(ratingFilter, above4_5, below4_0);
 }
+

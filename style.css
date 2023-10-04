@@ -60,6 +60,13 @@ div>a:hover{
 .searchbtn{
     width: 3%;
 }
+.subscribe-btn{
+    height: 50px;
+    margin-top: 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
 .buttons{
     margin: 40px 70px;
 }
@@ -171,6 +178,7 @@ td, th{
     width: 60%;
     height: 50px;
     margin-top: 20px;
+    border-radius: 10px;
 }
 .socialmedia-logo{
     margin: 40px;
@@ -210,6 +218,10 @@ td, th{
 }
 .navbar-toggler{
     display: none ;
+}
+
+.navbar-content{
+    display: none;
 }
 
 @media (max-width: 1000px) {
